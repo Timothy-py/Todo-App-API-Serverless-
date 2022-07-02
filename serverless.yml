@@ -43,6 +43,12 @@ functions:
       - httpApi: 
           path: /todo/{id}
           method: put
+  deleteTodo:
+    handler: src/deleteTodo.handler
+    events:
+      - httpApi: 
+          path: /todo/{id}
+          method: delete
 
 resources:
   Resources:
